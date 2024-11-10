@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML HomePage</title>
+    <style>
+      body {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f5f5f5;
+      }
+      .header .logo {
+        font-size: 25px;
+        font-family: "Sriracha", cursive;
+        color: #000;
+        text-decoration: none;
+        margin-left: 30px;
+      }
+      .nav-items {
+        display: flex;
+        justify-content: sapce-around;
+        align-items: center;
+        background-color: #f5f5f5;
+        margin-right: 20px;
+      }
+      .nav-items a {
+        text-decoration: none;
+        color: #000;
+        padding: 35px 20px;
+      }
+      .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 520px;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+          ),
+          url("https://th.bing.com/th/id/R.b53f072a7472ec7600cda86b839be453?rik=4BeNBk5C9MTxRA&riu=http%3a%2f%2fp1.qhimg.com%2ft011800575c110b96c5.jpg%3f1600*1065&ehk=loiboK3y5H%2fdeqGAdNJPsqoxZLwwP82nbAgSqB9s6TM%3d&risl=&pid=ImgRaw&r=0");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .intro h1 {
+        font-family: sans-serif;
+        font-size: 60px;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .intro p {
+        font-size: 20px;
+        color: #d1d1d1;
+        text-transform: uppercase;
+        margin: 20px 0;
+      }
+
+      .intro button {
+        background-color: #5edaf0;
+        color: #000;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+      }
+
+      .achievements {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 80px;
+      }
+
+      .achievements .work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+      }
+
+      .achievements .work i {
+        width: fit-content;
+        font-size: 50px;
+        color: #333333;
+        border-radius: 50%;
+        border: 2px solid #333333;
+        padding: 12px;
+      }
+
+      .achievements .work .work-heading {
+        font-size: 20px;
+        color: #333333;
+        text-transform: uppercase;
+        margin: 10px 0;
+      }
+
+      .achievements .work .work-text {
+        font-size: 15px;
+        color: #585858;
+        margin: 10px 0;
+      }
+
+      .about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 80px;
+        border-top: 2px solid #eeeeee;
+      }
+
+      .about-me img {
+        width: 500px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .about-me-text h2 {
+        font-size: 30px;
+        color: #333333;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .about-me-text p {
+        font-size: 15px;
+        color: #585858;
+        margin: 10px 0;
+      }
+
+      /* CSS for footer */
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #302f49;
+        padding: 40px 80px;
+      }
+
+      .footer .copy {
+        color: #fff;
+      }
+
+      .bottom-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0;
+      }
+
+      .bottom-links .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+      }
+
+      .bottom-links .links span {
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 10px 0;
+      }
+
+      .bottom-links .links a {
+        text-decoration: none;
+        color: #a1a1a1;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">My HomePage</a>
+      <nav class="nav-items">
+        <a href="#">主页</a>
+        <a href="#">关于</a>
+        <a href="#">联系我们</a>
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>我爱你</h1>
+        <p>这是一部优秀的电影</p>
+        <button>了解更多</button>
+      </div>
+      <div class="achievements">
+        <div class="work">
+          <i class="fas fa-atom"></i>
+          <p class="work-heading">麒麟鞭</p>
+          <p class="work-text">麒麟鞭，保安良，除恶扬善远名扬。</p>
+        </div>
+        <div class="work">
+          <i class="fas fa-atom"></i>
+          <p class="work-heading">保安良</p>
+          <p class="work-text">
+            头三遍，打的是恩将仇报白眼狼，利字当头丧天良。
+          </p>
+        </div>
+        <div class="work">
+          <i class="fas fa-atom"></i>
+          <p class="work-heading">除恶扬善</p>
+          <p class="work-text">
+            后三鞭，打的是没心没肝不孝子，长大成人忘爹娘。
+          </p>
+        </div>
+      </div>
+      <div class="about-me">
+        <div class="about-me-text">
+          <h2>关于我</h2>
+          <p>
+            麒麟鞭，保安良，除恶扬善远名扬。头三遍，打的是恩将仇报白眼狼，利字当头丧天良。后三鞭，打的是没心没肝不孝子，长大成人忘爹娘。再三鞭，虚情假意立牌坊，脸上亲热肚里凉。
+          </p>
+        </div>
+        <img src="haibao.jpg" alt="me" />
+      </div>
+    </main>
+    <footer>
+      <div class="copy">&copy;2024 我爱你</div>
+      <div class="bottom-links">
+        <div class="links">
+          <span>更多信息</span>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="links">
+          <span>Social Links</span>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
